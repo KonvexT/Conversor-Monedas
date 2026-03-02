@@ -16,7 +16,7 @@ public class ConsultaMoneda {
         Properties propiedades = new Properties();
         try (FileInputStream fis = new FileInputStream("config.properties")) {
             propiedades.load(fis);
-            apiKey = propiedades.getProperty("13b6cdbdb9434beb049ba166");
+            apiKey = propiedades.getProperty("apiKey");
         } catch (IOException e) {
             throw new RuntimeException("Error al cargar el archivo de configuración: " + e.getMessage());
         }
